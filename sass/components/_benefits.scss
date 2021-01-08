@@ -1,0 +1,64 @@
+.benefits,
+.preview,
+.portfolio {
+  background: $hero-title-color;
+}
+
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits-item {
+  display: flex;
+}
+
+.benefits-item .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon {
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background: #f5f4fa;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.benefits h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.benefits h3 {
+  margin-top: 0;
+  margin-bottom: 10;
+
+  color: $title-text-color;
+  @include font-options(700, 14px, 1.14, 0.03em);
+  /*font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;*/
+  text-transform: uppercase;
+}
+
+.benefits p {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 270px;
+
+  color: $primary-text-color;
+  @include font-options(400, 14px, 1.71, 0.03em);
+  /*font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;*/
+}
