@@ -1,11 +1,17 @@
 .logo {
+  display: block;
   color: $accent-color;
   font-family: $logo-font;
-  @include font-options(700, 26px, 1.19, 0.03em);
-  /*font-weight: 700;
+
+  @include font-options(700, 24px, 1.17, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include font-options(700, 26px, 1.19, 0.03em);
+    /*font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;*/
+  }
 }
 
 .logo-header {
@@ -14,4 +20,10 @@
 
 .logo-footer {
   color: $hero-title-color;
+}
+
+.logo-naw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
