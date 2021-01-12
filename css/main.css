@@ -67,100 +67,26 @@ header {
   background: #ffffff;
 }
 
-/*.logo-nav {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-}*/
-/*.nav {
+@media screen and (min-width: 768px) {
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.naw {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-}*/
-/*.site-naw {
-  /* display: flex;*/
-/* margin-left: 93px;
-
-  @include font-options(500, 14px, 1.14, 0.02em);
-  /*font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;*/
-/*}
-
-.site-naw .item:not(:last-child) {
-  margin-right: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.site-naw .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: $title-text-color;
-
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus,
-  &.current {
-    color: $accent-color;
-  }
-}
-
-.site-naw .link.current {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: "";
-
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-
-    background: $accent-color;
-  }
-}
-
-/* contacts-header */
-/*.contacts-header {
-  /* display: flex;*/
-/* margin-left: auto;
-
-  @include font-options(500, 14px, 1.14, 0.02em);
-  /*font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;*/
-/*}
-
-.contacts-header .item + .item {
-  margin-left: 50px;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: $primary-text-color;
-
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
-
-.contacts-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}*/
 .menu-button {
   display: block;
   width: 40px;
@@ -223,15 +149,56 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .site-naw {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  /*font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;*/
+}
+
+@media screen and (min-width: 768px) {
+  .site-naw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 88px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-naw {
+    margin-left: 93px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-naw .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-naw .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-naw .item:last-child {
+    margin-bottom: 60px;
+  }
 }
 
 .site-naw .link {
@@ -244,6 +211,14 @@ header {
 
 .site-naw .link:hover, .site-naw .link:focus, .site-naw .link.current {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .site-naw .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .site-naw .link.current {
@@ -263,24 +238,48 @@ header {
   background: #2196f3;
 }
 
-.site-naw .item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
-.site-naw .item:last-child {
-  margin-bottom: 60px;
-}
-
 /* contacts-header */
 .contacts-header {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  /*font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;*/
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-left: 83px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 285px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contacts {
@@ -302,13 +301,34 @@ header {
   color: #2196f3;
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contacts-header .item + .item {
-  margin-top: 16px;
+@media screen and (max-width: 767px) {
+  .contacts-header .item + .item {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-header .item + .item {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-header .item + .item {
+    margin-left: 50px;
+  }
 }
 
 .logo {
@@ -327,10 +347,6 @@ header {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    /*font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;*/
   }
 }
 
@@ -342,7 +358,7 @@ header {
   color: #ffffff;
 }
 
-.logo-naw {
+.naw {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,16 +593,59 @@ address > a:hover, address > a:focus {
 }
 
 .hero {
-  height: 600px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-image.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-image.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(133, 135, 165, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(133, 135, 165, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(133, 135, 165, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-mobile@2x.jpg);
+    background-image: linear-gradient(to right, rgba(133, 135, 165, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(133, 135, 165, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(133, 135, 165, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(133, 135, 165, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-tablet@2x.jpg);
+    background-image: linear-gradient(to right, rgba(133, 135, 165, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(133, 135, 165, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(133, 135, 165, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(133, 135, 165, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../imeges/hero-desktop@2x.jpg);
+    background-image: linear-gradient(to right, rgba(133, 135, 165, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-desktop@2x.jpg);
+  }
 }
 
 .hero-title {
@@ -594,15 +653,20 @@ address > a:hover, address > a:focus {
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
-  /* font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;*/
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .button-hero {
@@ -625,10 +689,6 @@ address > a:hover, address > a:focus {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  /*font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;*/
   cursor: pointer;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
