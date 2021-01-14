@@ -128,19 +128,47 @@
       <h2>Наша команда</h2>
       <ul class="command-item">
         <li class="item">
-        <img src="./imeges/img(1).jpg" alt="Игорь Демьяненко" width="270"> 
-         <!-- <img 
-         alt="Игорь Демьяненко"
-         src="./imeges/igor-mobile.jpg"
-         srcset="./imeges/igor-mobile.jpg 450w
-                 ./imeges/igor-mobile@2x.jpg 900w,
-                 ./imeges/igor-tablet.jpg 354w,
-                 ./imeges/igor-tablet@2x.jpg 708w,
-                 ./imeges/igor-desktop.jpg 270w,
-                 ./imeges/igor-desktop@2x.jpg 270w
-                 "
-            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
-         /> -->
+       <!-- <img src="./imeges/img(1).jpg" alt="Игорь Демьяненко" width="270">  -->
+         <picture>
+
+           <source 
+             srcset="./imeges/igor-mobile.webp 1x, ./imeges/igor-mobile@2x.webp 2x"
+             type="image/webp"
+             media="(max-width: 767px)" 
+           />
+
+          <source 
+            srcset="./imeges/igor-desktop.webp 1x, ./imeges/igor-desktop@2x.webp 2x" 
+            type="image/webp"
+            media="(min-width: 1200px)" 
+          />
+          
+          <source 
+            srcset="./imeges/igor-tablet.webp 1x, ./imeges/igor-tablet@2x.webp 2x" 
+            type="image/webp"
+            media="(min-width: 768px)" 
+          />
+
+           <source 
+             srcset="./imeges/igor-mobile.jpg 1x, ./imeges/igor-mobile@2x.jpg 2x" 
+             media="(max-width: 767px)" 
+           />
+
+           <source 
+             srcset="./imeges/igor-desktop.jpg 1x, ./imeges/igor-desktop@2x.jpg 2x" 
+             media="(min-width: 1200px)" 
+           />
+
+           <source 
+             srcset="./imeges/igor-tablet.jpg 1x, ./imeges/igor-tablet@2x.jpg 2x" 
+             media="(min-width: 768px)" 
+           />
+
+         
+          <img src="./imeges/igor-desktop.jpg" alt="Игорь Демьяненко">
+
+         </picture>
+         
           <h3>Игорь Демьяненко</h3>
           <p>Product Designer</p>
           <ul class="social-networks">
@@ -175,7 +203,48 @@
           </ul>
         </li>
         <li class="item">
-          <img src="./imeges/img(2).jpg" alt="Ольга Репина" width="270">
+          <!-- <img src="./imeges/img(2).jpg" alt="Ольга Репина" width="270"> -->
+
+          <picture>
+          
+            <source 
+              srcset="./imeges/olga-mobile.webp 1x, ./imeges/olga-mobile@2x.webp 2x" 
+              type="image/webp"
+              media="(max-width: 767px)" 
+            />
+          
+            <source 
+              srcset="./imeges/olga-desktop.webp 1x, ./imeges/olga-desktop@2x.webp 2x" 
+              type="image/webp"
+              media="(min-width: 1200px)" />
+          
+            <source 
+              srcset="./imeges/olga-tablet.webp 1x, ./imeges/olga-tablet@2x.webp 2x" 
+              type="image/webp"
+              media="(min-width: 768px)" 
+            />
+          
+            <source 
+              srcset="./imeges/olga-mobile.jpg 1x, ./imeges/olga-mobile@2x.jpg 2x" 
+              media="(max-width: 767px)" 
+            />
+          
+            <source 
+              srcset="./imeges/olga-desktop.jpg 1x, ./imeges/olga-desktop@2x.jpg 2x" 
+              media="(min-width: 1200px)" 
+            />
+          
+            <source 
+              srcset="./imeges/olga-tablet.jpg 1x, ./imeges/olga-tablet@2x.jpg 2x" 
+              media="(min-width: 768px)" 
+            />
+          
+          
+            <img src="./imeges/olga-desktop.jpg" alt="Ольга Репина">
+          
+          </picture>
+
+
           <h3>Ольга Репина</h3>
           <p>Frontend Developer</p>
           <ul class="social-networks">
@@ -210,7 +279,49 @@
           </ul>
         </li>
         <li class="item">
-          <img src="./imeges/img(3).jpg" alt="Николай Тарасов" width="270">
+          <!-- <img src="./imeges/img(3).jpg" alt="Николай Тарасов" width="270"> -->
+
+          <picture>
+          
+            <source 
+              srcset="./imeges/nikolay-mobile.webp 1x, ./imeges/nikolay-mobile@2x.webp 2x" 
+              type="image/webp"
+              media="(max-width: 767px)" 
+            />
+          
+            <source 
+              srcset="./imeges/nikolay-desktop.webp 1x, ./imeges/nikolay-desktop@2x.webp 2x" 
+              type="image/webp"
+              media="(min-width: 1200px)" 
+            />
+          
+            <source 
+              srcset="./imeges/nikolay-tablet.webp 1x, ./imeges/nikolay-tablet@2x.webp 2x" 
+              type="image/webp"
+              media="(min-width: 768px)" 
+            />
+          
+            <source 
+              srcset="./imeges/nikolay-mobile.jpg 1x, ./imeges/nikolay-mobile@2x.jpg 2x" 
+              media="(max-width: 767px)" 
+            />
+          
+            <source 
+              srcset="./imeges/nikolay-desktop.jpg 1x, ./imeges/nikolay-desktop@2x.jpg 2x" 
+              media="(min-width: 1200px)" 
+            />
+          
+            <source 
+              srcset="./imeges/nikolay-tablet.jpg 1x, ./imeges/nikolay-tablet@2x.jpg 2x" 
+              media="(min-width: 768px)" 
+            />
+          
+          
+            <img src="./imeges/nikolay-desktop.jpg" alt="Николай Тарасов">
+          
+          </picture>
+
+
           <h3>Николай Тарасов</h3>
           <p>Marketing</p>
           <ul class="social-networks">
@@ -245,7 +356,48 @@
           </ul>
         </li>
         <li class="item">
-        <img src="./imeges/img(4).jpg" alt="Михаил Ермаков" width="270">
+        <!-- <img src="./imeges/img(4).jpg" alt="Михаил Ермаков" width="270"> -->
+
+        <picture>
+        
+          <source 
+            srcset="./imeges/michael-mobile.webp 1x, ./imeges/michael-mobile@2x.webp 2x" 
+            type="image/webp"
+            media="(max-width: 767px)" 
+          />
+        
+          <source 
+            srcset="./imeges/michael-desktop.webp 1x, ./imeges/michael-desktop@2x.webp 2x" 
+            type="image/webp"
+            media="(min-width: 1200px)" 
+          />
+        
+          <source 
+            srcset="./imeges/michael-tablet.webp 1x, ./imeges/michael-tablet@2x.webp 2x" 
+            type="image/webp"
+            media="(min-width: 768px)" 
+          />
+        
+          <source 
+            srcset="./imeges/michael-mobile.jpg 1x, ./imeges/michael-mobile@2x.jpg 2x" 
+            media="(max-width: 767px)" 
+          />
+        
+          <source 
+            srcset="./imeges/michael-desktop.jpg 1x, ./imeges/michael-desktop@2x.jpg 2x" 
+            media="(min-width: 1200px)" 
+          />
+        
+          <source 
+            srcset="./imeges/michael-tablet.jpg 1x, ./imeges/michael-tablet@2x.jpg 2x" 
+            media="(min-width: 768px)" 
+          />
+        
+        
+          <img src="./imeges/michael-desktop.jpg" alt="Михаил Ермаков">
+        
+        </picture>
+
         <h3>Михаил Ермаков</h3>
         <p>UI Designer</p>
         <ul class="social-networks">
@@ -390,6 +542,7 @@
     
     <footer>
       <div class="container footer">
+        <div class="footer-contacts">
         <div class="link-footer">
       <a href="/" class="logo">Web<span class="logo-footer">Studio</span> </a>
       <address>
@@ -430,6 +583,7 @@
           </a>
         </li>
       </ul>
+      </div>
       </div>
      
 <form class="form-footer">
