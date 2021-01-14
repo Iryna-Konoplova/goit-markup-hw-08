@@ -1,16 +1,29 @@
 .command {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background: #f5f4fa;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .command-item {
-  display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
 }
 
 .command-item .item {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   overflow: hidden;
   border-radius: 0px 0px 4px 4px;
 
@@ -18,10 +31,25 @@
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
 
-.command-item .item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .command h3 {
@@ -29,12 +57,9 @@
   margin-bottom: 10px;
 
   color: $title-text-color;
-  @include font-options(500, 16px, 1.19, 0.03em);
-  /*font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;*/
   text-align: center;
+
+  @include font-options(500, 16px, 1.19, 0.03em);
 }
 
 .command p {
@@ -42,18 +67,16 @@
   margin-bottom: 16px;
 
   color: $primary-text-color;
-  @include font-options(400, 16px, 1.19, 0.03em);
-  /*font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;*/
   text-align: center;
+
+  @include font-options(400, 16px, 1.19, 0.03em);
 }
 
 .social-networks {
   display: flex;
-  padding-right: 32px;
-  padding-left: 32px;
+  justify-content: center;
+  /* padding-right: 32px;
+  padding-left: 32px;*/
 }
 
 .social-networks-link {

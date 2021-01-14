@@ -1,21 +1,27 @@
 .preview {
   padding-top: 0;
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .preview h2,
 .command h2,
 .clients h2 {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $title-text-color;
-  @include font-options(700, 36px, 1.16, 0.03em);
-  /*font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;*/
   text-align: center;
+  @include font-options(700, 28px, 1.18, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    @include font-options(700, 36px, 1.16, 0.03em);
+  }
 }
 
 .preview-item {

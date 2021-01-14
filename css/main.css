@@ -788,30 +788,28 @@ address > a:hover, address > a:focus {
   margin-top: 0;
   margin-bottom: 10;
   color: #212121;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  /*font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;*/
-  text-transform: uppercase;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits h3 {
+    text-align: center;
+  }
 }
 
 .benefits p {
   margin-top: 0;
   margin-bottom: 0;
-  width: 270px;
+  width: 100%;
   color: #757575;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /*font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;*/
 }
 
 .preview {
@@ -819,21 +817,35 @@ address > a:hover, address > a:focus {
   padding-bottom: 94px;
 }
 
+@media screen and (max-width: 1199px) {
+  .preview {
+    display: none;
+  }
+}
+
 .preview h2,
 .command h2,
 .clients h2 {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  /*font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;*/
   text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .preview h2,
+  .command h2,
+  .clients h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .preview-item {
@@ -881,19 +893,28 @@ address > a:hover, address > a:focus {
 }
 
 .command {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #f5f4fa;
 }
 
-.command-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .command-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .command-item .item {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   overflow: hidden;
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
@@ -901,46 +922,52 @@ address > a:hover, address > a:focus {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.command-item .item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .command-item .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command-item .item {
+    padding-bottom: 30px;
+  }
+  .command-item .item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .command h3 {
   margin-top: 30px;
   margin-bottom: 10px;
   color: #212121;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /*font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;*/
-  text-align: center;
 }
 
 .command p {
   margin-top: 0;
   margin-bottom: 16px;
   color: #757575;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /*font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;*/
-  text-align: center;
 }
 
 .social-networks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 32px;
-  padding-left: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* padding-right: 32px;
+  padding-left: 32px;*/
 }
 
 .social-networks-link {

@@ -70,23 +70,20 @@
   margin-bottom: 10;
 
   color: $title-text-color;
-  @include font-options(700, 14px, 1.14, 0.03em);
-  /*font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;*/
   text-transform: uppercase;
+
+  @include font-options(700, 14px, 1.14, 0.03em);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits p {
   margin-top: 0;
   margin-bottom: 0;
-  width: 270px;
+  width: 100%;
 
   color: $primary-text-color;
   @include font-options(400, 14px, 1.71, 0.03em);
-  /*font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;*/
 }
