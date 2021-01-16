@@ -136,6 +136,7 @@ header {
   .menu-container {
     display: none;
     position: absolute;
+    z-index: 10;
     top: 100%;
     left: 0;
     width: 100%;
@@ -1300,6 +1301,12 @@ address > a:hover, address > a:focus {
 @media screen and (min-width: 1200px) {
   .portfolio-item .item:nth-child(3n) {
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .portfolio-item .item:last-of-type {
+    margin-bottom: 0;
   }
 }
 
