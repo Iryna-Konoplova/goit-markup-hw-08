@@ -5,30 +5,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-    
+    rel="stylesheet">  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">  
-  <link rel="stylesheet" href="./css/main.min.css">
-      
+  <link rel="stylesheet" href="./css/main.min.css">      
 </head>
+
 <body>
     <header>
       <div class="container main-nav">
         <div class="naw">
-
           <a href="#" class="logo ">Web<span class="logo-header">Studio</span></a>
-         
-          <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <button type="button" class="menu-button" 
+                  aria-expanded="false" aria-controls="menu-container" data-menu-button>
             <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
               <use class="icon-cross" href="./imeges/symbol-defs.svg#icon-close-menu"></use>
-              <use class="icon-menu" href="./imeges/symbol-defs.svg#icon-menu"></use> -->
-          
+              <use class="icon-menu" href="./imeges/symbol-defs.svg#icon-menu"></use> 
             </svg>
           </button>
-
         </div>
        
         <div class="menu-container" id="menu-container" data-menu>
@@ -50,8 +45,7 @@
                 </svg>
                 +38 096 111 11 11</a></li>
           </ul>
-        </div>
-        
+        </div>  
       </div> 
     </header>
 
@@ -134,9 +128,7 @@
       <h2>Наша команда</h2>
       <ul class="command-item">
         <li class="item">
-       <!-- <img src="./imeges/img(1).jpg" alt="Игорь Демьяненко" width="270">  -->
          <picture>
-
            <source 
              srcset="./imeges/igor-mobile.webp 1x, ./imeges/igor-mobile@2x.webp 2x"
              type="image/webp"
@@ -170,9 +162,7 @@
              media="(min-width: 768px)" 
            />
 
-         
           <img src="./imeges/igor-desktop.jpg" alt="Игорь Демьяненко">
-
          </picture>
          
           <h3>Игорь Демьяненко</h3>
@@ -208,11 +198,9 @@
               </li>
           </ul>
         </li>
-        <li class="item">
-          <!-- <img src="./imeges/img(2).jpg" alt="Ольга Репина" width="270"> -->
 
+        <li class="item">
           <picture>
-          
             <source 
               srcset="./imeges/olga-mobile.webp 1x, ./imeges/olga-mobile@2x.webp 2x" 
               type="image/webp"
@@ -245,11 +233,8 @@
               media="(min-width: 768px)" 
             />
           
-          
             <img src="./imeges/olga-desktop.jpg" alt="Ольга Репина">
-          
           </picture>
-
 
           <h3>Ольга Репина</h3>
           <p>Frontend Developer</p>
@@ -284,9 +269,8 @@
             </li>
           </ul>
         </li>
-        <li class="item">
-          <!-- <img src="./imeges/img(3).jpg" alt="Николай Тарасов" width="270"> -->
 
+        <li class="item">
           <picture>
           
             <source 
@@ -322,11 +306,8 @@
               media="(min-width: 768px)" 
             />
           
-          
             <img src="./imeges/nikolay-desktop.jpg" alt="Николай Тарасов">
-          
           </picture>
-
 
           <h3>Николай Тарасов</h3>
           <p>Marketing</p>
@@ -361,9 +342,8 @@
             </li>
           </ul>
         </li>
-        <li class="item">
-        <!-- <img src="./imeges/img(4).jpg" alt="Михаил Ермаков" width="270"> -->
 
+        <li class="item">
         <picture>
         
           <source 
@@ -399,9 +379,7 @@
             media="(min-width: 768px)" 
           />
         
-        
           <img src="./imeges/michael-desktop.jpg" alt="Михаил Ермаков">
-        
         </picture>
 
         <h3>Михаил Ермаков</h3>
@@ -446,7 +424,6 @@
       <h2>Постоянные клиенты</h2>
       <ul class="clients-item">
         <li class="item">
-
           <a href="" class="clients-link">
             <svg class="clients-icon" width="44.27px" height="49.23px">
                <use href="./imeges/symbol-defs.svg#icon-logo-1"></use>
@@ -491,59 +468,7 @@
         </li>
       </ul>
       </div>
-
-      
-
     </section>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="button-modal" data-modal-close>
-          
-          <svg class="close" width="11px" height="11px">
-            <use href="./imeges/symbol-defs.svg#icon-close"></use>
-          </svg>
-    
-        </button>
-    <form class="form-modal">
-      <p class="caption-modal">Оставьте свои данные, мы вам перезвоним</p>
-      <label  class="modal-name" >
-        <span >Имя</span>
-        <input type="text" name="name" class="input-name">
-        <svg class="person" width="18px" height="18px">
-          <use href="./imeges/symbol-defs.svg#icon-person"></use>
-        </svg>
-      </label>
-      <label class="modal-phone">
-        <span>Телефон</span>
-        <input type="tel" name="phone" class="input-tel">
-        <svg class="phone" width="18px" height="18px">
-          <use href="./imeges/symbol-defs.svg#icon-phone"></use>
-        </svg>
-      </label>
-      <label class="modal-email">
-        <span>Почта</span>
-        <input type="email" name="email" class="input-email">
-        <svg class="email" width="18px" height="18px">
-          <use href="./imeges/symbol-defs.svg#icon-email"></use>
-        </svg>
-      </label>
-      <label class="modal-comment">
-        <span>Комментарий</span>
-        <textarea name="comment" placeholder="Введите текст" class="comment"></textarea>
-      </label>
-  
-       <label class="modal-agreement" >
-          <input type="checkbox" name="agreement" class="check-input">
-          <span class="check-box"></span>
-          <span class="check">Соглашаюсь с рассылкой и принимаю
-             <a href="" class="contract">Условия договора</a>
-          </span>
-       </label>
-       <button type="submit" class="send">Отправить</button>
-
-    </form>
-      </div>
-    </div>
     </main>
     
     <footer>
@@ -592,23 +517,66 @@
       </div>
       </div>
      
-<form class="form-footer">
-  <p>Подпишитесь на рассылку</p>
- 
-  <label class="subscription">
-    <input class="email-footer" type="email" name="subscription"  placeholder="E-mail">
-  </label>
-  
-  <button type="submit" class="button-form-footer">Подписаться
-     <svg class="button-send" width="24px" height="24px">
-        <use href="./imeges/symbol-defs.svg#icon-send"></use>
-     </svg>
-
-  </button>
-</form>
-
+      <form class="form-footer">
+        <p>Подпишитесь на рассылку</p>
+        <label class="subscription">
+          <input class="email-footer" type="email" name="subscription"  placeholder="E-mail">
+        </label>
+        <button type="submit" class="button-form-footer">Подписаться
+          <svg class="button-send" width="24px" height="24px">
+            <use href="./imeges/symbol-defs.svg#icon-send"></use>
+          </svg>
+        </button>
+      </form>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="button-modal" data-modal-close>
+          <svg class="close" width="11px" height="11px">
+            <use href="./imeges/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form class="form-modal">
+          <p class="caption-modal">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-name">
+            <span>Имя</span>
+            <input type="text" name="name" class="input-name">
+            <svg class="person" width="18px" height="18px">
+              <use href="./imeges/symbol-defs.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-phone">
+            <span>Телефон</span>
+            <input type="tel" name="phone" class="input-tel">
+            <svg class="phone" width="18px" height="18px">
+              <use href="./imeges/symbol-defs.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-email">
+            <span>Почта</span>
+            <input type="email" name="email" class="input-email">
+            <svg class="email" width="18px" height="18px">
+              <use href="./imeges/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-comment">
+            <span>Комментарий</span>
+            <textarea name="comment" placeholder="Введите текст" class="comment"></textarea>
+          </label>
+          <label class="modal-agreement">
+            <input type="checkbox" name="agreement" class="check-input">
+            <span class="check-box"></span>
+            <span class="check">Соглашаюсь с рассылкой и принимаю
+              <a href="" class="contract">Условия договора</a>
+            </span>
+          </label>
+          <button type="submit" class="send">Отправить</button>
+        </form>
+      </div>
+    </div>
 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
